@@ -297,7 +297,7 @@ cipPassword.createDialog = function() {
 					}
 				}
 
-				field.val($password);
+				field.val($password).change();
 				if(cIPJQ("input#cip-genpw-checkbox-next-field:checked").length == 1) {
 					if(field.data("cip-genpw-next-field-exists")) {
 						var nextFieldId = field.data("cip-genpw-next-field-id");
